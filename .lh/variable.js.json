@@ -1,0 +1,18 @@
+{
+    "sourceFile": "variable.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1779772923941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1779772923940,
+            "name": "Commit-0",
+            "content": "// JavaScript is a programming language used to create dynamic content for websites. It is a lightweight, cross-platform, and single-threaded programming language. It's an interpreted language that executes code line by line, providing more flexibility.\r\n\r\n// It is used for building interactive web applications, supports both client-side and server-side development, and integrates seamlessly with HTML, CSS, and a rich standard library.\r\n\r\n// Scope determines where a variable can be accessed or used within a JavaScript program.It helps control the visibility and lifetime of variables in different parts of the code.\r\n\r\n// A variable is a named container used to store data so you can reuse and manipulate it later in your program.\r\n// In JavaScript, you declare variables using:\r\n// var, let, const\r\n\r\n// var a = 10;\r\n// var a = 20; // redeclaration allowed with var\r\n// console.log(a); // 20\r\n\r\n// let b;\r\n// b = 20;\r\n// console.log(b); // 30\r\n// // let b = 30; // redeclaration not allowed with let & Cannot be redeclared in same scope\r\n// b = 30;\r\n\r\n// const c = 30;\r\n// // const c = 40; // redeclaration not allowed with const\r\n// // c = 40; // reassignment not allowed with const Also its Block scoped\r\n// console.log(c); // 30\r\n\r\n\r\n// for var ----------\r\n\r\n\r\n// function data() {\r\n//     for (var i = 0; i <= 12; i++) {\r\n//         console.log(i);\r\n//     }\r\n// }\r\n// data();\r\n// var is function-scoped, not block-scoped.\r\n// So i is accessible outside the for loop but still inside the function.\r\n\r\n// function data() {\r\n//     for (let i = 0; i <= 12; i++) {\r\n//         console.log(i);\r\n//     }\r\n//     // console.log(i); // not work\r\n// }\r\n// data();\r\n// i is not define\r\n// Variables declared with let are block-scoped\r\n// The { } of the for loop is a separate block\r\n\r\nvar x = 10;\r\nlet y = 100;\r\n\r\n{\r\n    var x = 100;\r\n    let y = 10;\r\n}\r\n\r\nconsole.log(x, y)"
+        }
+    ]
+}

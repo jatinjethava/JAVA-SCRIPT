@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<!-- DOM in JavaScript (Complete & Interview-Ready Explanation)
+
+DOM stands for Document Object Model.
+It is a programming interface that allows JavaScript to access, manipulate, and update HTML & CSS dynamically.
+
+🧠 Simple Definition (Interview One-Liner)
+
+The DOM is a tree-like structure where each HTML element is represented as an object that JavaScript can manipulate. -->
+
+<body>
+    <div class="div">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut ullam eos quia. Ut quo consequuntur odio in
+        reprehenderit obcaecati quam temporibus ratione ipsum repellendus vero, ab alias! Nemo tenetur quae unde, qui
+        dolore nihil, doloribus error voluptatum veniam distinctio corrupti animi recusandae. Sequi adipisci illo fuga
+        exercitationem ab possimus!
+
+        <br>
+        <button>click</button>
+    </div>
+    <!-- <div class="div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis aut consequuntur possimus commodi
+        est maxime? Esse aspernatur dolore odio, nisi tenetur laborum sunt libero reiciendis, debitis nulla sint.
+    </div>
+    <button class="but">click</button>
+
+    <script>
+        $(document).ready(function () {
+            $(".but").click(function () {
+                $(".div").css("color", "coral");
+                //$([type]).css("color","coral");
+                //$(this).css("color","coral");
+                //$(".div first-child").css("color","coral");
+                //$(".div last-child").css("color","coral");
+                //$(".div nth-child(2)").css("color","coral");
+                //$(".div nth-last-child(2)").css("color","coral");
+            });
+        });
+    </script> -->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".div").css({
+                    "text-tranform": "uppercase",
+                    "color": "#333",
+                    "background-color": "#bdbdbd",
+                    "letter-spacing": "2px",
+                    "transition": "all 0.5s ease-in-out"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

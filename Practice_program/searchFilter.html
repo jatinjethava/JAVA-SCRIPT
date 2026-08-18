@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Filter</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            background: #f2f2f2;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Search Filter</h2>
+
+    <input type="text" id="searchInput" placeholder="Search items..." />
+
+    <ul id="list"></ul>
+
+    <script>
+        const items = [
+            "Apple",
+            "Banana",
+            "Orange",
+            "Mango",
+            "Pineapple",
+            "Grapes",
+            "Watermelon",
+            "Papaya"
+        ];
+
+        const list = document.getElementById("list");
+        const searchInput = document.getElementById("searchInput");
+
+        function render(data) {
+            list.innerHTML = "";
+
+            data.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                list.appendChild(li);
+            });
+        }
+
+        render(items);
+
+        searchInput.addEventListener("input", function (e) {
+            const value = e.target.value.toLowerCase();
+
+            const filtered = items.filter(item =>
+                item.toLowerCase().includes(value)
+            );
+
+            render(filtered);
+        });
+    </script>
+
+</body>
+
+</html>

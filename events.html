@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+</head>
+<style>
+    .div {
+        border: 2px solid #333;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px #333;
+    }
+
+    button {
+        margin: 20px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere eaque obcaecati harum nobis nulla ab
+        dicta optio? Id, molestiae consequuntur vel saepe, exercitationem aliquam quis sunt ullam fugiat eaque
+        necessitatibus illum aperiam quos harum temporibus illo? Quasi, molestias neque pariatur cupiditate nobis
+        praesentium ex veniam quis sequi voluptatum optio id ratione, maxime illo eaque quod perferendis in corrupti
+        animi enim ab culpa sed ducimus totam. Reprehenderit, earum ipsam. Sed accusantium, blanditiis nemo excepturi
+        libero voluptatem eaque saepe hic, aperiam placeat cumque magnam dicta, neque impedit? Nisi, sapiente at eveniet
+        provident alias nostrum fuga, maxime molestiae earum minus quo ipsa.
+    </div>
+    <button>click</button>
+
+    <script>
+        $(document).ready(function () {
+            //$(".div").on({click:function(){}})
+            $(".div").on({
+                click: function () {
+                    console.log("click the mouse button");
+                    $(".div").css("background-color", "#cdcdcd")
+                },
+                mouseleave: function () {
+                    console.log("mouse leave");
+                    $(".div").css("background-color", "#fff")
+                }
+            });
+
+            $("button").click(function () {
+                $(".div").slideToggle(1000);
+            })
+
+            //   $(".div").hide(1000, function () {
+            //   console.log("hidden");
+            //   })
+            //   $(".div").show(1000, function () {
+            //       console.log("show");
+            //   })
+
+            //$("button").click(function () {
+            //   $(".div").toggle(1000);
+            //})
+
+            //$(".div").slideDown(1000);
+            //$(".div").slideUp(1000);
+            //$(".div").slideToggle(1000);
+
+
+            // $(".div").animate({opacity:0.3},3000)
+            // $(".div").animate({width:'800px'},3000)
+            // $(".div").animate({height:'300px'},1000)
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- Event Types
+JavaScript supports a variety of event types. Common categories include:
+
+Mouse Events: click, dblclick, mousemove, mouseover, mouseout
+Keyboard Events: keydown, keypress, keyup
+Form Events: submit, change, focus, blur
+Window Events: load, resize, scroll -->
+
+<!--
+// $('#ta').html('setting it to jatin');
+// $('#inp').val('setting it to jatin');
+// $('#inp').empty()
+// $('#wiki').text('you are good')
+// $('#wiki').remove()
+
+// $('#wiki').addClass('myclass')
+// $('#wiki').removeClass('myclass2')
+
+// AJAX Using jQuery
+// $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+// $.get('./css.html', function (data, status) { alert(data); })
+
+// $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+// $.post('https://code.jquery.com/jquery-3.3.1.js',
+{ name: 'harry', channel: 'code with harry' },
+function (data, status) { alert(status) });
+
+//}); -->

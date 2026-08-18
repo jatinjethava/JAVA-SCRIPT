@@ -1,0 +1,18 @@
+{
+    "sourceFile": "spread_operater.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1779774366965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1779774366965,
+            "name": "Commit-0",
+            "content": "// 👉 The spread operator (...) is used to expand (spread) elements of an array, object, or string into individual values.\r\n// The spread operator (...) expands iterable values into individual elements.\r\n\r\nlet a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\r\nlet b = [...a];\r\nconsole.log(b);\r\n\r\n// let [first, second, ...rest] = a;\r\n// console.log(first);\r\n// console.log(second);\r\n\r\n// console.log(rest);\r\n\r\n// let obj = {\r\n//     name: \"jatin jethava\",\r\n//     phone_no: 8160082638,\r\n//     email: \"jatin@gmail.com\",\r\n// }\r\n\r\n// let { name: first, phone_no: second, ...rest } = obj;\r\n// console.log(first);\r\n// console.log(second);\r\n// console.log(rest);\r\n\r\nlet str = \"JATIN\";\r\nlet chars = [...str];\r\n// console.log(chars);\r\nconsole.log(chars.join(\"\"));\r\n\r\n// 1️⃣ Spread with Arrays\r\n// ✅ Copy an Array\r\n// ✅ Merge Arrays\r\n// ✅ Add Elements While Copying\r\n\r\n// 2️⃣ Spread with Objects(Very Important)\r\n// ✅ Copy Object\r\n// ✅ Merge Objects\r\n// ✅ Update Object Property"
+        }
+    ]
+}

@@ -1,0 +1,441 @@
+🚀 JavaScript Advanced Topics for Interview
+
+1️⃣3️⃣ Shallow vs Deep Copy
+
+Object.assign
+
+Spread operator
+
+JSON.parse(JSON.stringify())
+
+structuredClone()
+
+1️⃣4️⃣ Memory Management & Garbage Collection
+
+Stack vs Heap
+
+Memory leaks
+
+Closures & DOM references
+
+===========================================================================================================================================================================
+
+🟢 JavaScript Basics – Questions
+
+What is JavaScript and where is it used?
+
+Difference between JavaScript and Java
+
+What are variables in JavaScript?
+
+Difference between var, let, and const
+
+Rules for naming variables in JavaScript
+
+What are data types in JavaScript?
+
+Difference between primitive and non-primitive data types
+
+What is typeof operator?
+
+What is undefined vs null?
+
+What are operators in JavaScript?
+
+Types of operators in JavaScript
+
+Difference between == and ===
+
+What is type coercion?
+
+What is NaN?
+
+What are comments in JavaScript?
+
+What is an expression?
+
+What is a statement?
+
+Difference between alert, prompt, and confirm
+
+What is console.log?
+
+What is strict mode ("use strict")?
+
+🟢 Control Statements – Questions
+
+What are conditional statements?
+
+Syntax of if, else if, and else
+
+What is a switch statement?
+
+Difference between switch and if-else
+
+What are loops?
+
+Types of loops in JavaScript
+
+Difference between for, while, and do-while
+
+What is break statement?
+
+What is continue statement?
+
+What is infinite loop?
+
+What is nested loop?
+
+Program to check even or odd number
+
+Program to find largest of three numbers
+
+Program to print prime numbers
+
+Program to reverse a number
+
+Program to find factorial of a number
+
+🟢 Functions – Questions
+
+What is a function?
+
+Types of functions in JavaScript
+
+What is function declaration?
+
+What is function expression?
+
+What is arrow function?
+
+Difference between normal function and arrow function
+
+What are parameters and arguments?
+
+What is default parameter?
+
+What is return statement?
+
+What is callback function?
+
+What is IIFE?
+
+What is higher-order function?
+
+What is recursion?
+
+Program to find factorial using recursion
+
+🟢 Arrays – Questions
+
+What is an array?
+
+How to create an array?
+
+Difference between array and object
+
+What is array indexing?
+
+What is array length?
+
+What are array methods?
+
+Difference between push, pop, shift, unshift
+
+Difference between map, filter, and reduce
+
+What is forEach?
+
+What is find and findIndex?
+
+What is includes?
+
+Difference between slice and splice
+
+What is array destructuring?
+
+Program to find largest element in array
+
+Program to remove duplicate elements from array
+
+🟢 Strings – Questions
+
+What is a string?
+
+Difference between single quotes, double quotes, and backticks
+
+What is template literal?
+
+What are string methods?
+
+Difference between substring, substr, and slice
+
+What is split method?
+
+What is replace method?
+
+What is includes method?
+
+Program to reverse a string
+
+Program to check palindrome string
+
+🟢 Objects – Questions
+
+What is an object?
+
+How to create an object?
+
+Difference between object and array
+
+What are object properties?
+
+What are object methods?
+
+What is this keyword?
+
+What is object destructuring?
+
+Difference between dot notation and bracket notation
+
+What is Object.keys()?
+
+What is Object.values()?
+
+What is Object.entries()?
+
+Program to iterate object properties
+
+🟡 DOM (Document Object Model) – Questions
+
+What is DOM?
+
+Difference between HTML and DOM
+
+What is DOM tree?
+
+What is getElementById?
+
+Difference between getElementsByClassName and querySelector
+
+What is querySelectorAll?
+
+How to change HTML content using DOM?
+
+How to change CSS using JavaScript?
+
+How to create and remove elements dynamically?
+
+What is event?
+
+Types of DOM events
+
+What is event listener?
+
+Difference between inline event and addEventListener
+
+🟡 Events – Questions
+
+What is event bubbling?
+
+What is event capturing?
+
+Difference between bubbling and capturing
+
+What is event delegation?
+
+What is preventDefault?
+
+What is stopPropagation?
+
+Mouse events examples
+
+Keyboard events examples
+
+Form events examples
+
+Program for button click counter
+
+🟡 ES6 (Modern JavaScript) – Questions
+
+What is ES6?
+
+Features of ES6
+
+What is let and const?
+
+What is arrow function?
+
+What is spread operator?
+
+What is rest parameter?
+
+What is destructuring?
+
+What are template literals?
+
+What are default parameters?
+
+What are modules?
+
+Difference between named export and default export
+
+🔵 Advanced JavaScript – Questions
+
+What is execution context?
+
+What is call stack?
+
+What is hoisting?
+
+What is temporal dead zone?
+
+What is scope?
+
+Types of scope in JavaScript
+
+What is lexical scope?
+
+What is closure?
+
+Real-life example of closure
+
+What is this in different contexts?
+
+What is call, apply, and bind?
+
+Difference between call, apply, and bind
+
+What is currying?
+
+What is memoization?
+
+🔵 Asynchronous JavaScript – Questions
+
+What is synchronous vs asynchronous JavaScript?
+
+What is callback?
+
+What is callback hell?
+
+What is promise?
+
+States of promise
+
+What is then, catch, and finally?
+
+What is async/await?
+
+Difference between promise and async/await
+
+What is event loop?
+
+What is microtask queue?
+
+What is setTimeout?
+
+What is setInterval?
+
+Program using async/await
+
+🔵 Browser & Web APIs – Questions
+
+What is localStorage?
+
+Difference between localStorage and sessionStorage
+
+What is cookies?
+
+What is JSON?
+
+Difference between JSON and object
+
+What is fetch API?
+
+GET vs POST request
+
+What is REST API?
+
+What is CORS?
+
+Program to fetch API data
+
+🔵 Error Handling & Security – Questions
+
+What is error handling?
+
+What is try-catch?
+
+What is finally block?
+
+Types of errors in JavaScript
+
+What is custom error?
+
+What is debugging?
+
+What is XSS?
+
+What is CSRF?
+
+🔴 OOP in JavaScript – Questions
+
+What is OOP?
+
+What is class?
+
+What is object?
+
+What is constructor?
+
+What is inheritance?
+
+What is encapsulation?
+
+What is polymorphism?
+
+What is abstraction?
+
+Difference between prototype and class
+
+What is prototype chaining?
+
+What is extends keyword?
+
+What is super keyword?
+
+🔴 JavaScript Interview Coding Questions – Programs
+
+Reverse a string
+
+Check palindrome
+
+Find duplicate elements
+
+Remove duplicates
+
+Find missing number in array
+
+Fibonacci series
+
+Prime number check
+
+Anagram check
+
+Count character occurrences
+
+Debounce function
+
+Throttle function
+
+Deep copy vs shallow copy
+
+Flatten nested array
+
+Sum of array using reduce
+
+Find second largest number
+
+Sort array without built-in method
+
+Implement custom map function

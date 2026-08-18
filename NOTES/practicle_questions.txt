@@ -1,0 +1,324 @@
+🟢 JavaScript Basics – Practical Questions
+Create a program to swap two numbers without using a third variable.
+
+Write a program to check whether a number is positive, negative, or zero.
+
+Create a program to find the largest of three numbers.
+
+Write a program to check whether a number is even or odd.
+
+Create a program to calculate simple interest.
+
+Write a program to convert Celsius to Fahrenheit.
+
+Create a program to generate a random number between two given values.
+
+Write a program to check whether a year is a leap year.
+
+🟢 Control Statements & Loops – Practical Questions
+
+Print numbers from 1 to 100 using a loop.
+
+Print even numbers between 1 and 50.
+
+Print multiplication table of a given number.
+
+Find the factorial of a number using a loop.
+
+Check whether a number is prime.
+
+Print Fibonacci series up to N terms.
+
+Reverse a number using a loop.
+
+Count digits in a given number.
+
+Find the sum of digits of a number.
+
+Create a pattern printing program (star pattern).
+
+🟢 Functions – Practical Questions
+
+Create a function to add two numbers.
+
+Write a function that returns the square of a number.
+
+Create a function to check palindrome string.
+
+Write a function that accepts another function as argument.
+
+Create a function that returns another function.
+
+Write a recursive function to calculate factorial.
+
+Create an IIFE to print a message.
+
+Write an arrow function to calculate area of a circle.
+
+Create a callback function example using setTimeout.
+
+Write a function to count vowels in a string.
+
+🟢 Arrays – Practical Questions
+
+Create an array and display all elements.
+
+Find the largest number in an array.
+
+Find the smallest number in an array.
+
+Remove duplicate elements from an array.
+
+Sort an array in ascending order.
+
+Reverse an array without using built-in methods.
+
+Find sum of array elements using reduce.
+
+Create a program to merge two arrays.
+
+Find common elements between two arrays.
+
+Create a custom implementation of map().
+
+🟢 Strings – Practical Questions
+
+Reverse a string.
+
+Check whether a string is palindrome.
+
+Count occurrences of each character in a string.
+
+Convert first letter of each word to uppercase.
+
+Find longest word in a string.
+
+Replace a word in a string.
+
+Check whether a string contains a substring.
+
+Remove spaces from a string.
+
+Count number of words in a string.
+
+Convert string to array of words.
+
+🟢 Objects – Practical Questions
+
+Create an object representing a student.
+
+Access object properties using dot and bracket notation.
+
+Add and delete properties dynamically.
+
+Iterate object properties using loop.
+
+Create a method inside an object.
+
+Use this keyword inside an object method.
+
+Clone an object using spread operator.
+
+Merge two objects.
+
+Convert object to array.
+
+Freeze an object and test modification.
+
+🟡 DOM Manipulation – Practical Questions
+
+Change text of a paragraph using JavaScript.
+
+Change background color of a div on button click.
+
+Create and append a new element to DOM.
+
+Remove an element from DOM.
+
+Toggle a CSS class on button click.
+
+Display input value on screen.
+
+Create a dynamic list using JavaScript.
+
+Validate form inputs using JavaScript.
+
+Show/hide password functionality.
+
+Create a character counter for textarea.
+
+🟡 Events – Practical Questions
+
+Handle button click event.
+
+Handle mouse hover event.
+
+Handle keyboard input event.
+
+Prevent form submission.
+
+Implement event bubbling example.
+
+Implement event capturing example.
+
+Implement event delegation.
+
+Count number of times a button is clicked.
+
+Create a simple image slider.
+
+Create a modal popup using JavaScript.
+
+🟡 ES6 Features – Practical Questions
+
+Use let and const correctly in a program.
+
+Use arrow functions in array methods.
+
+Implement destructuring on array and object.
+
+Use spread operator to copy data.
+
+Use rest parameters in a function.
+
+Create a default parameter function.
+
+Use template literals to print dynamic data.
+
+Create a module with export and import.
+
+Convert normal function to arrow function.
+
+Use Set to remove duplicates.
+
+🔵 Advanced JavaScript – Practical Questions
+
+Demonstrate hoisting with variables and functions.
+
+Create a closure example.
+
+Create a private variable using closure.
+
+Use call, apply, and bind.
+
+Create a currying function.
+
+Implement memoization.
+
+Demonstrate lexical scope.
+
+Create a custom bind() method.
+
+Implement deep copy of object.
+
+Demonstrate shallow copy issue.
+
+🔵 Asynchronous JavaScript – Practical Questions
+
+Use setTimeout to delay execution.
+
+Use setInterval to create a timer.
+
+Create a callback-based async function.
+
+Convert callback to Promise.
+
+Create a Promise and handle success/failure.
+
+Chain multiple Promises.
+
+Use async/await with try-catch.
+
+Fetch data from an API using fetch.
+
+Display API data on webpage.
+
+Handle API errors gracefully.
+
+🔵 Browser Storage & Web APIs – Practical Questions
+
+Store and retrieve data from localStorage.
+
+Clear localStorage data.
+
+Store user session data using sessionStorage.
+
+Save form data in localStorage.
+
+Convert object to JSON and back.
+
+Create a simple todo app using localStorage.
+
+Detect online/offline status.
+
+Create a dark mode toggle using storage.
+
+Handle window resize event.
+
+Copy text to clipboard.
+
+🔴 OOP in JavaScript – Practical Questions
+
+Create a class with constructor.
+
+Create multiple objects from a class.
+
+Implement inheritance using extends.
+
+Use super keyword.
+
+Create getter and setter.
+
+Demonstrate encapsulation.
+
+Demonstrate polymorphism.
+
+Use static methods.
+
+Create a class-based todo app.
+
+Compare class vs prototype approach.
+
+🔴 Real-World JavaScript Projects (Practice)
+
+Calculator using JavaScript
+
+Digital clock
+
+Stopwatch
+
+Todo list app
+
+Weather app using API
+
+Quiz application
+
+Form validation system
+
+Password strength checker
+
+Image gallery
+
+Shopping cart logic
+
+🔥 JavaScript Interview-Level Practical Tasks
+
+Implement debounce function.
+
+Implement throttle function.
+
+Flatten nested array.
+
+Find second largest number in array.
+
+Implement custom reduce().
+
+Compare two objects deeply.
+
+Create infinite scrolling.
+
+Implement lazy loading.
+
+Create custom event.
+
+Build mini JavaScript framework logic.

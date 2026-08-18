@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttle vs Debounce</title>
+    <style>
+        body {
+            height: 200vh;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .normal {
+            top: 20px;
+        }
+
+        .throttle {
+            top: 80px;
+        }
+
+        .debounce {
+            top: 140px;
+        }
+
+        .description {
+            margin-top: 200px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="normal">normal count : 0</h1>
+    <h1 class="throttle">throttle count : 0</h1>
+    <h1 class="debounce">debounce count : 0</h1>
+
+    <div class="description">
+        <p>Scroll to see the difference between normal, throttle, and debounce functions.</p>
+        <p><strong>Normal:</strong> Executes every time the event fires.</p>
+        <p><strong>Throttle:</strong> Executes at most once every 1000ms, no matter how many times the event fires.</p>
+        <p><strong>Debounce:</strong> Only executes after 1000ms of inactivity (stops scrolling).</p>
+    </div>
+
+    <script>
+        const normalEl = document.querySelector('.normal');
+        const throttleEl = document.querySelector('.throttle');
+        const debounceEl = document.querySelector('.debounce');
+
+        let normalCount = 0;
+        let throttleCount = 0;
+        let debounceCount = 0;
+
+        function normal_Count() {
+            normalCount++;
+            normalEl.innerHTML = `normal count : ${normalCount}`;
+        }
+
+        // Throttle: Execute immediately, then ignore calls for a delay period
+        function createThrottle(func, delay) {
+            let lastCall = 0;
+            return function () {
+                const now = Date.now();
+                if (now - lastCall >= delay) {
+                    lastCall = now;
+                    func();
+                }
+            };
+        }
+
+        // Debounce: Delay execution and reset timer on each call
+        function createDebounce(func, delay) {
+            let timeoutId;
+            return function () {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    func();
+                }, delay);
+            };
+        }
+
+        function throttle_count() {
+            throttleCount++;
+            throttleEl.innerHTML = `throttle count : ${throttleCount}`;
+        }
+
+        function debounce_count() {
+            debounceCount++;
+            debounceEl.innerHTML = `debounce count : ${debounceCount}`;
+        }
+
+        const throttledCount = createThrottle(throttle_count, 1000);
+        const debouncedCount = createDebounce(debounce_count, 1000);
+
+        function showCount() {
+            normal_Count();
+            throttledCount();
+            debouncedCount();
+        }
+
+        window.addEventListener('scroll', showCount);
+    </script>
+</body>
+
+</html>
