@@ -463,13 +463,6 @@ javascript-practice/
 │   ├── arrays/
 │   └── objects/
 │
-├── mini-projects/
-│   ├── todo-app/
-│   ├── calculator/
-│   ├── weather-app/
-│   ├── age-calculator/
-│   └── typing-speed-checker/
-│
 └── README.md
 ```
 
