@@ -368,18 +368,12 @@ This repository also contains JavaScript logic-building programs.
 Practical JavaScript projects completed for improving DOM, API, and logic-building skills.
 
 * Todo App
-* Calculator
 * Age Calculator
 * Expense Checker
 * Typing Speed Checker
-* Weather App
-* Digital Clock
 * Counter App
 * Random Number Generator
-* Password Generator
 * Character Counter
-* Color Generator
-* Quiz App
 * Form Validation
 * Search Filter
 * Image Slider
