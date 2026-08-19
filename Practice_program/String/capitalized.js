@@ -7,5 +7,25 @@ function capitalizeWords(str) {
         .join(" ");
 }
 
-console.log(capitalizeWords("hi i am jatin jethava!"));
+// console.log(capitalizeWords("hi i am jatin jethava!"));
 // "Hi I Am Jatin Jethava!"
+
+// =====================================================
+
+function isUpperCaseAt(str, index) {
+    if (typeof str !== "string") {
+        return new Error("type must be string");
+    }
+
+    let itIs = true;
+    for (let i = 0; i < str.length; i++) {
+        if (str[index] !== str[index].toUpperCase()) {
+            itIs = false;
+            break;
+        }
+    }
+
+    return itIs;
+}
+
+// console.log(isUpperCaseAt("JatinJethava", 0));

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add item</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        li {
+            border-radius: 5px;
+            padding: 8px;
+            box-shadow: 2px 2px 5px gray;
+        }
+    </style>
+</head>
+
+<body class="font-mono">
+    <div>
+        <div class="flex justify-center item-center">
+            <h1
+                class="text-center text-xl m-5 uppercase after:block after:h-0.5 after:w-100% after:content-[''] after:bg-black/20">
+                Todo Array
+            </h1>
+        </div>
+        <div class="flex justify-center item-center">
+            <input type="text" name="add" id="add" class="p-2 border mx-2" placeholder="enter item">
+            <button id="btn" class="mx-2 border px-2 hover:text-white hover:bg-black transition:300">submit</button>
+        </div>
+        <div class="flex justify-center item-center">
+            <ul class="ul p-2 w-75 my-5 flex flex-col justify-center item-center gap-2"></ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    var arr = [];
+    document.getElementById("btn").addEventListener("click", () => {
+        let inputEl = document.getElementById("add");
+        let item = inputEl.value.trim();
+        if (!item || item.length === 0) {
+            alert("plz enter items");
+            return false;
+        }
+
+        arr.push(item);
+        display();
+        inputEl.value = "";
+    });
+
+    function display() {
+        const ul = document.querySelector(".ul");
+        ul.innerHTML = "";
+        arr.forEach(element => {
+            const li = document.createElement("li");
+            li.textContent = element;
+            ul.appendChild(li);
+        });
+    }
+</script>
+
+</html>

@@ -18,7 +18,6 @@ function myLogic(arr) {
             if (Math.abs(a - b) === 10 && !printedPair.has(pair)) {
                 console.log("sub pair :", a, b)
                 printedPair.add(pair);
-                count++;
             }
         }
     }

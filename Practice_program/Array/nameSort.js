@@ -7,4 +7,10 @@ for (let i = 0; i < name.length; i++) {
     map.set(hieght[i], name[i]);
 }
 
-console.log([...map.key()].sort((a, b) => a - b));
+const sort = [...map.keys()].sort((a, b) => a - b);
+
+let arr = [];
+for (let val of sort) {
+    arr.push(map.get(val));
+}
+console.log("name", arr);

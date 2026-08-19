@@ -11,3 +11,17 @@ function chunk(arr, size) {
 }
 
 console.log(chunk([1, 2, 3, 4, 5], 2));
+
+// =================================================
+
+function reverseGroups(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i += 2) {
+        let group = arr.slice(i, i + 2);
+        group.reverse();
+        result.push(...group);
+    }
+    return result;
+}
+
+console.log(reverseGroups([1, 2, 3, 4, 5, 6]));

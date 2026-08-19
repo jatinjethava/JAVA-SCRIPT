@@ -7,7 +7,7 @@ function leftRotate(arr) {
     return arr;
 }
 
-console.log(leftRotate([1, 2, 3, 4, 5]));
+// console.log(leftRotate([1, 2, 3, 4, 5]));
 
 // ==============================================
 
@@ -20,7 +20,7 @@ function rightRotate(arr) {
     return arr;
 }
 
-console.log(rightRotate([1, 2, 3, 4, 5]));
+// console.log(rightRotate([1, 2, 3, 4, 5]));
 
 // ==============================================
 
@@ -31,7 +31,7 @@ function leftRotateBy(arr, k) {
     return arr;
 }
 
-console.log(leftRotateBy([1, 2, 3, 4, 5], 3));
+// console.log(leftRotateBy([1, 2, 3, 4, 5], 3));
 
 // ==============================================
 
@@ -42,4 +42,13 @@ function rightRotateBy(arr, k) {
     return arr;
 }
 
-console.log(rightRotateBy([1, 2, 3, 4, 5], 2));
+// console.log(rightRotateBy([1, 2, 3, 4, 5], 2));
+
+// ==============================================
+
+function move(array, from, to) {
+    [array[from], array[to]] = [array[to], array[from]]
+    return array;
+}
+
+console.log(move([10, 20, 30, 40, 50], 0, 2));

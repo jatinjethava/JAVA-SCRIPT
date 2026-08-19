@@ -1,10 +1,10 @@
-const arr = [10, 62, 13, 54, 15, 6, 27, 8, 39, 10];
+const arr = [-10, 62, -13, 54, 15, -6, 27, 8, 39, 10];
 
 const large = arr.sort((a, b) => b - a);
-console.log("second large:", large[1]);
+console.log("second large:", large);
 
 const small = arr.sort((a, b) => a - b);
-console.log("second small:", small[1]);
+console.log("second small:", small);
 
 // =========================================================
 
@@ -39,9 +39,9 @@ for (let i = 1; i < arr.length; i++) {
         secSml = arr[i];
     }
 }
-console.log("Largest element: ", lg);
-console.log("Smallest element: ", sml);
-console.log("Second Largest element: ", secLg);
-console.log("Second Smallest element: ", secSml);
+// console.log("Largest element: ", lg);
+// console.log("Smallest element: ", sml);
+// console.log("Second Largest element: ", secLg);
+// console.log("Second Smallest element: ", secSml);
 
 // =========================================================
