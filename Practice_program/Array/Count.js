@@ -18,17 +18,3 @@ function countOccurrences(arr) {
     return result;
 }
 console.log(countOccurrences([1, 2, 2, 3, 1, 2]));
-// i = 0
-// val = 1
-// result[1] = (undefined || 0) + 1  = 1
-// result = { 1: 1}
-
-// i = 1
-// val = 2
-// result[2] = (undefined || 0) + 1  = 1
-// result = { 1: 1, 2: 1 }
-
-// i = 2
-// val = 2
-// result[2] = (1 || 0) + 1  = 1
-// result = { 1: 1, 2: 2 }

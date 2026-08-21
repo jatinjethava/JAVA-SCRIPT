@@ -18,3 +18,21 @@ function makePair(obj) {
 }
 console.log(makePair({ a: 1, b: 2 }));
 // result : [['a', 1], ['b', 2]]
+
+// ============================================================
+
+const a1 = ['name', 'age', 'city'];
+const a2 = ['Ajay', 25, 'New Delhi'];
+
+const obj = a1.reduce((acc, item, idx) => {
+    const key = item;
+
+    if (!acc[key]) {
+        acc[key] = []
+    }
+
+    acc[key] = a2[idx];
+    return acc;
+}, {})
+
+console.log(obj)

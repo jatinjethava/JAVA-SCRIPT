@@ -80,6 +80,33 @@
                 res.style.color = "blue";
             }
         }
+
+        function findNext(start, end) {
+            let sum = 1;
+
+            for (let i = start; i <= end; i++) {
+                let isPrime = true;
+
+                if (i < 2) {
+                    isPrime = false;
+                }
+
+                for (let j = 2; j < i; j++) {
+                    if (i % j === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+
+                if (isPrime) {
+                    sum *= i;
+                }
+            }
+
+            return sum;
+        }
+
+        console.log(findNext(1, 10));
     </script>
 </body>
 

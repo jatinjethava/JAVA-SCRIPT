@@ -43,12 +43,3 @@ function rightRotateBy(arr, k) {
 }
 
 // console.log(rightRotateBy([1, 2, 3, 4, 5], 2));
-
-// ==============================================
-
-function move(array, from, to) {
-    [array[from], array[to]] = [array[to], array[from]]
-    return array;
-}
-
-console.log(move([10, 20, 30, 40, 50], 0, 2));

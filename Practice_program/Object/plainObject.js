@@ -7,5 +7,19 @@ function plainObject(obj) {
     return false;
 }
 
-console.log(plainObject([1, 2, 3]));
-console.log(plainObject({ a: 1 }));
+// console.log(plainObject([1, 2, 3]));
+// console.log(plainObject({ a: 1 }));
+
+var student = {
+    name: "David Rayy",
+    sclass: "VI",
+    rollno: 12
+};
+let count = 0;
+for (const key in student) {
+    if (key === "rollno") {
+        delete student[key]
+    }
+    count++
+}
+console.log(student, `length is : ${count}`)

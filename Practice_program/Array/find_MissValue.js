@@ -24,3 +24,22 @@ function findMissing(arr, n) {
 }
 
 console.log(findMissing(arr, up_To));
+
+// ======================================================================
+
+function findNext(arr) {
+    arr.sort((a, b) => a - b);
+    let pos = arr.filter((i) => i === Math.abs(i))
+
+    let miss = 0;
+    for (let i = pos[0]; i < pos[pos.length - 1]; i++) {
+        if (!pos.includes(i)) {
+            miss = i;
+            break;
+        }
+    }
+
+    return (miss === 0) ? 1 : miss;
+}
+
+console.log(findNext([2, -3, 4, 1, 1, 7]));

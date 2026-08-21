@@ -17,3 +17,22 @@ const result = data.reduce((acc, item) => {
 }, {});
 
 console.log(result);
+
+// ==================================================
+
+let nums = {
+    a: 100,
+    b: 200,
+    title: 'My nums'
+};
+
+function multiplyByTwo(obj) {
+    for (let key in obj) {
+        if (typeof obj[key] === 'number') {
+            obj[key] *= 2;
+        }
+    }
+}
+
+multiplyByTwo(nums);
+console.log(nums);

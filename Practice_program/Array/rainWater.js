@@ -12,12 +12,14 @@ function rainCount(arr) {
         maxRight = Math.max(arr[i], maxRight);
         right[i] = maxRight;
     }
-
+    // left = [4,4,4,4,4,5]
+    // right = [5,5,5,5,5,5]
     let count = 0;
     for (let i = 0; i < arr.length; i++) {
-        count += Math.min(left[i], right[i]) - arr[i];
+        count += Math.min(left[i], right[i]) - arr[i]; // 0 + 2 + 4 + 1 + 2 + 0 = 9
     }
     return count;
 }
 
 console.log(rainCount([4, 2, 0, 3, 2, 5]));
+// https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/701211/Web/Other/blobid0_1741784862.png

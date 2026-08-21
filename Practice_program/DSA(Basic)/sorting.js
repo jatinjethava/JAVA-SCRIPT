@@ -45,3 +45,17 @@ function sort(arr) {
     return arr;
 }
 console.log(sort([1, 5, 8, 9, 6, 4, 7, 3, 2]))
+
+// ======================================================
+
+function findNext(arr) {
+    arr.sort((a, b) => {
+        return (b + "" + a) - (a + "" + b);
+    });
+
+    return arr.join("");
+}
+
+console.log(findNext([3, 30, 34, 5, 9]));
+// Input: arr[] = [3, 30, 34, 5, 9]
+// Output: 9534330
