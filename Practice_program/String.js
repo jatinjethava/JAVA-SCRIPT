@@ -2,8 +2,8 @@
 
 // length – Returns the number of characters in a string.
 // charAt(index) – Returns the character at the specified index.
-// slice(start, end) – Extracts a section of a string and returns it as a new string.
-// substring(start, end) – Similar to slice(), but does not accept negative indices.
+// slice(start, end) –nd returns it as a new string.
+// substring(start, end) – Extracts a section of a string a Similar to slice(), but does not accept negative indices.
 // toUpperCase() / toLowerCase() – Converts the string to uppercase or lowercase.
 // trim() – Removes whitespace from both ends of a string.
 // replace(searchValue, newValue) – Replaces a specified value with another value.
@@ -14,10 +14,7 @@
 // 1. reverse a string
 let str = "hello";
 let reversedStr = str.split("").reverse().join('');
-// str.split("") = [ 'h', 'e', 'l', 'l', 'o' ]
-// .reverse() = [ 'o', 'l', 'l', 'e', 'h' ]
-// .join('') = olleh
-// console.log(reversedStr);
+console.log(reversedStr);
 
 let name = "jatin";
 let reverseString = '';

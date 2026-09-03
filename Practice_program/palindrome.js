@@ -4,9 +4,7 @@ function isPalindromeNumber(num) {
 
     while (num > 0) {
         let digit = num % 10;
-        // console.log(digit)
         reversed = reversed * 10 + digit;
-        // console.log("rev :", reversed)
         num = Math.floor(num / 10);
     }
 

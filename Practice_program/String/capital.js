@@ -1,6 +1,12 @@
 function capital(str) {
     let str2 = str.split(" ");
-    return str2.map(item => item[0].toUpperCase() + item.slice(1)).join(" ");
+    let newStr = "";
+
+    for (let i = 0; i < str2.length; i++) {
+        newStr += str2[i].charAt(0).toUpperCase() + str2[i].slice(1);
+    }
+
+    return newStr;
 }
 
 console.log(capital("jatin jethava"))

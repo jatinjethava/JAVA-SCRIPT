@@ -19,7 +19,7 @@ function truncate(str, pos) {
         newStr += " " + truncStr[i];
     }
 
-    return `"${newStr} "`;
+    return `"${newStr}..."`;
 }
 
 console.log(truncate('The quick brown fox jumps over the lazy dog', 4));

@@ -3,7 +3,7 @@ function alphabetize_string(str) {
         return new Error("type must be String.");
     }
 
-    return sortedStr = str.split('').sort().join("");
+    return sortedStr = str.split(' ').sort().join('');
 }
 
 console.log(alphabetize_string('United States'));

@@ -5,7 +5,6 @@ function findNum(num) {
 
     while (start <= end) {
         let mid = Math.floor((start + end) / 2);
-
         if (arr[mid] === num) {
             return mid;
         }
@@ -18,4 +17,4 @@ function findNum(num) {
     }
     return start;
 }
-console.log(findNum(20));
+console.log(findNum(19));

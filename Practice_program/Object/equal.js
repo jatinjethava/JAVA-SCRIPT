@@ -1,39 +1,46 @@
-//  Expected Result: True if objects are identical, false if objects are different ({ a: 1, b: 1 }, { a: 1, b: 1 }) => true
+const obj1 = {
+    name: "Jatin",
+    address: {
+        city: "Surat"
+    }
+};
 
-function isEqual(obj1, obj2) {
-    if (Object.keys(obj1).length !== Object.keys(obj2).length) {
+const obj2 = {
+    name: "Jatin",
+    address: {
+        city: "Surat"
+    }
+};
+
+function compare(obj1, obj2) {
+    if (obj1 === null || obj2 === null || typeof obj1 !== "object" || typeof obj2 !== "object") {
         return false;
     }
 
-    for (let key in obj1) {
-        if (obj1[key] !== obj2[key]) {
+    const keys1 = Object.keys(obj1);
+    const keys2 = Object.keys(obj2);
+
+    if (keys1.length !== keys2.length) {
+        return false;
+    }
+
+    for (let key of keys1) {
+        if (!Object.hasOwn(obj2, key)) {
             return false;
         }
-    }
-    return true;
-}
 
-// console.log(isEqual({ a: 1, b: 1 }, { a: 1, b: 1 }));
-// console.log(isEqual({ a: 1, b: 1 }, { a: 1, b: 2 }));
-
-// ============================================================================
-
-// Expected Result: True if objects are equal, false if objects are different ({ a: 1, b: { c: 1 } }, { a: 1, b: { c: 1 } }) => true
-
-function isEqualDeep(obj1, obj2) {
-    if (Object.keys(obj1).length !== Object.keys(obj2).length) {
-        return false;
-    }
-
-    for (let key in obj1) {
-        if (obj1[key] !== obj2[key]) {
-            if (typeof obj1[key] !== 'object' || typeof obj2[key] !== 'object') {
+        if (typeof obj1[key] === "object" && obj1[key] !== null) {
+            if (!compare(obj1[key], obj2[key])) {
                 return false;
             }
-            return isEqualDeep(obj1[key], obj2[key]);
+        } else {
+            if (obj1[key] !== obj2[key]) {
+                return false;
+            }
         }
     }
+
     return true;
 }
 
-console.log(isEqualDeep({ a: 1, b: { c: 1 } }, { a: 1, b: { c: 1 } }));
+console.log(compare(obj1, obj2));

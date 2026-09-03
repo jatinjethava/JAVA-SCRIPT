@@ -13,7 +13,7 @@ function longestSTr(array) {
     return a.slice(0, i);
 }
 
-// console.log(longestSTr(["jatin", "jatin jethava"]));
+console.log(longestSTr(["jatin", "jatin jethava"]));
 
 // ====================================================
 

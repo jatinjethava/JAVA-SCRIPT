@@ -18,14 +18,11 @@ function isUpperCaseAt(str, index) {
     }
 
     let itIs = true;
-    for (let i = 0; i < str.length; i++) {
-        if (str[index] !== str[index].toUpperCase()) {
-            itIs = false;
-            break;
-        }
+    if (str[index] !== str[index].toUpperCase()) {
+        itIs = false;
     }
 
     return itIs;
 }
 
-// console.log(isUpperCaseAt("JatinJethava", 0));
+console.log(isUpperCaseAt("JatinJethava", 0));

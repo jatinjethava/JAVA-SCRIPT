@@ -5,8 +5,8 @@ function findMissing(arr, n) {
     return expectedSum - actualSum;
 }
 
-// const arr = [1, 2, 3, 4, 6];
-// const up_To = 6;
+const arr = [1, 2, 3, 4, 6];
+const up_To = 6;
 
 // console.log(findMissing(arr, up_To));
 
