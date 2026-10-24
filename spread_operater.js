@@ -5,17 +5,17 @@ let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let b = [...a];
 console.log(b);
 
-// let [first, second, ...rest] = a;
-// console.log(first);
-// console.log(second);
+let [first, second, ...rest] = a;
+console.log(first);
+console.log(second);
 
 // console.log(rest);
 
-// let obj = {
-//     name: "jatin jethava",
-//     phone_no: 8160082638,
-//     email: "jatin@gmail.com",
-// }
+let obj = {
+    name: "jatin jethava",
+    phone_no: 8160082638,
+    email: "jatin@gmail.com",
+}
 
 // let { name: first, phone_no: second, ...rest } = obj;
 // console.log(first);

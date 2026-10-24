@@ -5,10 +5,10 @@ function Student(name, age, rank, country) {
     this.country = country;
 }
 
-let Students1 = new Student('Dinanath', 35, 5, 'India');
+let Students1 = new Student('jatin', 20, 5, 'India');
 console.log('Students1', Students1);
 
-let Students2 = new Student('Dinanath', 35, 5, 'India');
+let Students2 = new Student('jatin', 20, 5, 'India');
 console.log('Students2', Students2);
 
 

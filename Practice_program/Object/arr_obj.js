@@ -6,8 +6,9 @@ const users = [
 
 const userMap = users.reduce((acc, user) => {
     if (!acc[user.id]) {
-        acc[user.id] = user;
+        acc[user.id] = [];
     }
+    acc[user.id].push(user.name);
     return acc;
 }, {});
 console.log(userMap)

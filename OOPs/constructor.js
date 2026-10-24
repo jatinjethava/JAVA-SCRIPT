@@ -35,5 +35,5 @@ class Car {
     }
 }
 
-let myCar = new Car('Honda', 'Civic', 2022);
-console.log(myCar.getCarInfo());
+// let myCar = new Car('Honda', 'Civic', 2022);
+// console.log(myCar.getCarInfo());

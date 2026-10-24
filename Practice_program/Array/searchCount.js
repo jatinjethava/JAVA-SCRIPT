@@ -1,8 +1,7 @@
 function countSearchOccurances(arr, val) {
 
     return arr.reduce((acc, curElement) => {
-        let count = (curElement === val) ? 1 : 0;
-        return acc + count;
+        return acc + ((curElement === val) ? 1 : 0);
     }, 0)
 }
 

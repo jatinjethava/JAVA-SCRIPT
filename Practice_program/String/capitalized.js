@@ -17,12 +17,7 @@ function isUpperCaseAt(str, index) {
         return new Error("type must be string");
     }
 
-    let itIs = true;
-    if (str[index] !== str[index].toUpperCase()) {
-        itIs = false;
-    }
-
-    return itIs;
+    return str[index] !== str[index].toUpperCase();
 }
 
 console.log(isUpperCaseAt("JatinJethava", 0));

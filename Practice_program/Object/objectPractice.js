@@ -174,7 +174,6 @@ const people = [
     { name: "Amit", age: 22 },
     { name: "Raj", age: 25 },
     { name: "Raju", age: 22 }
-
 ];
 
 // const names = people.map((item) => item.name);
@@ -257,7 +256,7 @@ const output = {
 const clone = { ...user1 }
 console.log(clone)
 
-// ====================== REAL WORL EXAMPLE =======================
+// ====================== REAL WORLD EXAMPLE =======================
 
 const products = [
     { id: 1, name: "T-Shirt", price: 599 },
@@ -273,7 +272,7 @@ const cart = [
 
 // Find highest-priced product
 const highest = products.reduce((max, item) => {
-    return max.price > item.price ? max : item
+    return max > item.price ? max : item
 });
 // console.log(highest)
 

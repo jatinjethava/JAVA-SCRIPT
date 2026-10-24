@@ -3,7 +3,7 @@ function hideEmail(str) {
     let str2 = str1[0] // jatinjethava3125
     let domain = str1[1]; // gmail.com
 
-    let name = str2.slice(0, Math.floor(str2.length - str2.length / 2)); // jatinjet
+    let name = str2.slice(0, Math.floor(str2.length / 2)); // jatinjet
     let hideName = "";
     for (let i = 0; i < Math.floor(name.length / 2); i++) {
         hideName += ".";

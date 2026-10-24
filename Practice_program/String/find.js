@@ -8,7 +8,7 @@ function search_word(str, search) {
     let count = 0;
 
     for (let i = 0; i < str.length; i++) {
-        if (str[i] === search) {
+        if (str[i].toLowerCase() === search.toLowerCase()) {
             count++;
         }
     }

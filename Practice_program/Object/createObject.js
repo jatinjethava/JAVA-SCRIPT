@@ -34,7 +34,7 @@ function createObjFactoryMethod(name, age, rank, country) {
     }
 }
 
-let Students1 = createObjFactoryMethod('Dinanath', 35, 5, 'India');
+let Students1 = createObjFactoryMethod('jatin', 20, 5, 'India');
 console.log('Students1', Students1);
 
 function Student(name, age, rank, country) {
@@ -44,5 +44,5 @@ function Student(name, age, rank, country) {
     this.country = country;
 }
 
-let Students2 = new Student('Amit', 30, 4, 'Hindustan');
+let Students2 = new Student('jatin', 20, 5, 'India');
 console.log('Students2', Students2);

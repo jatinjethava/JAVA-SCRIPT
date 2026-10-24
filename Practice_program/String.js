@@ -2,7 +2,7 @@
 
 // length – Returns the number of characters in a string.
 // charAt(index) – Returns the character at the specified index.
-// slice(start, end) –nd returns it as a new string.
+// slice(start, end) – Extracts a section of a string and returns it as a new string.
 // substring(start, end) – Extracts a section of a string a Similar to slice(), but does not accept negative indices.
 // toUpperCase() / toLowerCase() – Converts the string to uppercase or lowercase.
 // trim() – Removes whitespace from both ends of a string.

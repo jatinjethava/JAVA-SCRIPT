@@ -2,6 +2,7 @@
 
 function makePair(obj) {
     let returnArray = [];
+
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
             returnArray.push([key, obj[key]]);
@@ -31,7 +32,7 @@ const obj = a1.reduce((acc, item, idx) => {
         acc[key] = []
     }
 
-    acc[key] = a2[idx];
+    acc[key].push(a2[idx]);
     return acc;
 }, {})
 

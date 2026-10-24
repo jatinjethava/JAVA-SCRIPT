@@ -15,7 +15,6 @@ while (i <= k) {
     else {
         i++;
     }
-
 }
 
 console.log(arr);

@@ -9,11 +9,11 @@ const PREMITIVE_TYPE = [
     'null'
 ];
 console.log(PREMITIVE_TYPE);
-// let a = 10;
-// let b = a; // b gets a copy of the value of a
-// b = 20; // changing b does not affect a
-// console.log(a); // 10
-// console.log(b); // 20
+let a = 10;
+let b = a; // b gets a copy of the value of a
+b = 20; // changing b does not affect a
+console.log(a); // 10
+console.log(b); // 20
 
 //===================================================================================
 
@@ -24,11 +24,11 @@ const NON_PREMITIVE_TYPE = [
     'function'
 ];
 console.log(NON_PREMITIVE_TYPE);
-// let obj1 = { name: 'jatin' };
-// let obj2 = obj1; // obj2 gets a reference to the same object as obj1
-// obj2.name = 'jethava'; // changing obj2 affects obj1
-// console.log(obj1.name); // 'jethava'
-// console.log(obj2.name); // 'jethava'
+let obj1 = { name: 'jatin' };
+let obj2 = obj1; // obj2 gets a reference to the same object as obj1
+obj2.name = 'jethava'; // changing obj2 affects obj1
+console.log(obj1.name); // 'jethava'
+console.log(obj2.name); // 'jethava'
 
 //===================================================================================
 
@@ -45,7 +45,7 @@ const REFERENCE_TYPE = [
 ];
 console.log(REFERENCE_TYPE);
 // ex.
-// const arr = [1, 2, 3, 4, 5];
-// b = arr;
-// b.pop();
-// console.log(arr); // [ 1, 2, 3, 4 ]
+const arr = [1, 2, 3, 4, 5];
+b = arr;
+b.pop();
+console.log(arr); // [ 1, 2, 3, 4 ]

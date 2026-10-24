@@ -14,7 +14,7 @@ function countVowels(str) {
 // console.log(countVowels("Hello"));
 // =====================================================
 
-// 1. vowel count without any methods
+// 1. vowel count without using any method
 function countVowels(name) {
     let str = name.toLowerCase();
     let count = 0;

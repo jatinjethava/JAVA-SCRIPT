@@ -25,12 +25,13 @@ function compare(obj1, obj2) {
     }
 
     for (let key of keys1) {
-        if (!Object.hasOwn(obj2, key)) {
+        if (!obj2.hasOwnProperty(key)) {
             return false;
         }
 
-        if (typeof obj1[key] === "object" && obj1[key] !== null) {
-            if (!compare(obj1[key], obj2[key])) {
+        if (typeof obj1[key] === "object" && obj1[key] !== null && typeof obj2[key] === "object" && obj2[key] !== null) {
+            const res = compare(obj1[key], obj2[key]);
+            if (!res) {
                 return false;
             }
         } else {

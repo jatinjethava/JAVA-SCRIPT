@@ -22,9 +22,9 @@ console.log(count("The quick brown fox jumps over the lazy dog", 'fox'));
 // =============================================================
 
 function subStrAfterChars(str, char, pos) {
-    if (pos == 'b')
+    if (pos === 'b')
         return str.substring(str.indexOf(char) + 1);
-    else if (pos == 'a')
+    else if (pos === 'a')
         return str.substring(0, str.indexOf(char));
     else
         return str;

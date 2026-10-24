@@ -9,39 +9,40 @@
 // var, let, const
 
 // var a = 10;
+
 // var a = 20; // redeclaration allowed with var
 // console.log(a); // 20
 
-// let b;
-// b = 20;
+let b;
+b = 20;
 // console.log(b); // 30
-// // let b = 30; // redeclaration not allowed with let & Cannot be redeclared in same scope
-// b = 30;
+// let b = 30; // redeclaration not allowed with let & Cannot be redeclared in same scope
+b = 30;
 
-// const c = 30;
-// // const c = 40; // redeclaration not allowed with const
-// // c = 40; // reassignment not allowed with const Also its Block scoped
+const c = 30;
+// const c = 40; // redeclaration not allowed with const
+// c = 40; // reassignment not allowed with const Also its Block scoped
 // console.log(c); // 30
 
 
 // for var ----------
 
 
-// function data() {
-//     for (var i = 0; i <= 12; i++) {
-//         console.log(i);
-//     }
-// }
+function data() {
+    for (var i = 0; i <= 12; i++) {
+        console.log(i);
+    }
+}
 // data();
 // var is function-scoped, not block-scoped.
 // So i is accessible outside the for loop but still inside the function.
 
-// function data() {
-//     for (let i = 0; i <= 12; i++) {
-//         console.log(i);
-//     }
-//     // console.log(i); // not work
-// }
+function data() {
+    for (let i = 0; i <= 12; i++) {
+        console.log(i);
+    }
+    // console.log(i); // not work
+}
 // data();
 // i is not define
 // Variables declared with let are block-scoped
@@ -55,4 +56,15 @@ let y = 100;
     let y = 10;
 }
 
-console.log(x, y)
+// console.log(x, y)
+
+
+function test() {
+    let x = 10;
+    if (x > 5) {
+        let x = 20;
+        console.log("Inner scope:", x);
+    }
+    console.log("Outer scope:", x);
+}
+// test();

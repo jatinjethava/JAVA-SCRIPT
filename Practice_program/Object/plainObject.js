@@ -12,7 +12,7 @@ function plainObject(obj) {
 
 var student = {
     name: "David Rayy",
-    sclass: "VI",
+    class: "VI",
     rollno: 12
 };
 let count = 0;

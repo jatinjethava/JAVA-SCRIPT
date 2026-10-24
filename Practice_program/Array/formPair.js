@@ -16,8 +16,8 @@ console.log(formPair(arr));
 
 // =============================================
 
-const pairArray = arr.reduce((acc, item) => {
-    acc[item[0]] = item[1];
+const pairArray = arr.reduce((acc, [key, val]) => {
+    acc[key] = val;
     return acc;
 }, {});
 console.log(pairArray);

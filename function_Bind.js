@@ -8,9 +8,10 @@
 
 const user = {
     name: "Jatin",
+    age: 25,
 
     clickHandler: function () {
-        console.log(this.name);
+        console.log(this.name + " " + this.age);
     }
 };
 button.addEventListener(
@@ -33,15 +34,15 @@ boundGreet();
 
 // 2. call() Method
 // The call() method immediately invokes a function, allowing you to set the value of this and pass arguments to the function.
-const person = {
-    name: 'GFG',
-    greet: function (city) {
-        console.log('Hello, ' + this.name + ' from ' + city);
-    }
-};
-person.greet('Delhi');
-const greet = person.greet;
-greet.call(person, 'Noida');
+// const person = {
+//     name: 'GFG',
+//     greet: function (city) {
+//         console.log('Hello, ' + this.name + ' from ' + city);
+//     }
+// };
+// person.greet('Delhi');
+// const greet = person.greet;
+// greet.call(person, 'Noida');
 
 // 3. apply() Method
 // Similar to call(), the apply() method invokes a function and allows you to set the value of this, but the difference is that the arguments are passed as an array (or an array-like object).

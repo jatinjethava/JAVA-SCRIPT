@@ -18,7 +18,7 @@
 //     k++;
 // } while (k < 5);
 
-// forEach()   
+// forEach()
 // array.forEach(function (element, index, array) {
 //     // code to execute
 // });

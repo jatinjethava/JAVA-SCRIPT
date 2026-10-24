@@ -19,7 +19,10 @@ function intersectionDeep(obj1, obj2) {
         if (obj1[key] === obj2[key]) {
             returnObj[key] = obj1[key];
         } else if (obj1[key] !== null && obj2[key] !== null && typeof obj1[key] === "object" && typeof obj2[key] === "object") {
-            returnObj[key] = intersectionDeep(obj1[key], obj2[key]);
+            const res = intersectionDeep(obj1[key], obj2[key]);
+            if (Object.keys(res).length > 0) {
+                returnObj[key] = res;
+            }
         }
     }
     return returnObj;
